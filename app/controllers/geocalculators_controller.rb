@@ -6,9 +6,13 @@ class GeocalculatorsController < ApplicationController
 
   # POST /geocalculators or /geocalculators.json
   def create
-    @distance = Geocoder::Calculations.distance_between(params[:origin], params[:destination])
+    @distance = geocode_calculation
     render :new, status: :unprocessable_entity
   end
 
   private
+
+  def geocode_calculation
+    Geocoder::Calculations.distance_between(params[:origin], params[:destination])
+  end
 end
