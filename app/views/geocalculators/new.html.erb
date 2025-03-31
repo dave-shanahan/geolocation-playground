@@ -1,0 +1,23 @@
+<main id="main-section">
+  <h1 id="heading">Geo-Calculator</h1>
+
+  <%= form_with url: geocalculate_path, class: "form-group" do |form| %>
+    <div class="form-element">
+      <%= form.label :origin, "Origin:", id: "origin-label" %>
+      <%= form.text_field :origin, id: "origin-text", required: true  %>
+    </div>
+    <div class="form-element">
+      <%= form.label :destination, "Destination:"  %>
+      <%= form.text_field :destination, id: "destination-text", required: true %>
+    </div>
+    <div class="form-element">
+      <%= form.submit :Calculate, id: "calculate-button" %>
+    </div>
+  <% end %>
+
+  <% if @distance %>
+    <div id="result">
+      Distance: <%= number_with_precision(@distance, precision: 1) %> miles.
+    </div>
+  <% end %>
+</main>

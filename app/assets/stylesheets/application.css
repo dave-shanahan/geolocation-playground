@@ -8,3 +8,74 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper {
+    max-width: 960px;
+    margin-inline: auto;
+}
+
+#main-section {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+    height: 400px;
+}
+
+#heading {
+    font-size: 3.6em;
+    font-family: fantasy;
+}
+
+.form-group {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    width: 350px;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+
+.form-element {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-element:last-of-type {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+#origin-text {
+    width: 250px;
+    padding: 12px 20px;
+    font-size: 1em;
+}
+
+#destination-text {
+    width: 250px;
+    padding: 12px 20px;
+    font-size: 1em;
+}
+
+#calculate-button {
+    font-size: 1em;
+    display: inline-block;
+    padding-block: 10px;
+    width: 100%;
+}
+
+#result {
+    font-size: 2em;
+}
