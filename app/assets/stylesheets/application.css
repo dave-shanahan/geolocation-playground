@@ -57,13 +57,18 @@
 }
 
 #origin-text {
-    width: 250px;
+    width: 225px;
     padding: 12px 20px;
     font-size: 1em;
 }
 
+#geolocation-button {
+    padding: 11px 20px;
+    font-size: 1em;
+}
+
 #destination-text {
-    width: 250px;
+    width: 285px;
     padding: 12px 20px;
     font-size: 1em;
 }

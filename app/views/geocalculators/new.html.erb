@@ -6,7 +6,10 @@
     <div id="inputs">
       <div class="form-element">
         <%= form.label :origin, "Origin:" %>
-        <%= form.text_field :origin, id: "origin-text", required: true %>
+        <div data-controller="geolocate">
+          <%= form.text_field :origin, id: "origin-text", required: true, "data-geolocate-target": "origin" %>
+          <%= form.button html_escape_once('&target;'), id: "geolocation-button", "data-action": "geolocate#getGeoLocationCoords" %>
+        </div>
       </div>
       <div class="form-element">
         <%= form.label :destination, "Destination:" %>
