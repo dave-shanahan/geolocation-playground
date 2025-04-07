@@ -1,24 +1,13 @@
-# README
+# Geolocation Playground
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails 8 playground application to learn about the [geocoder gem](https://github.com/alexreisner/geocoder) and the [browser geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
 
-Things you may want to cover:
+## Usage
 
-* Ruby version
+The client can allow the application to receive their geolocation from the browser or enter an arbitrary origin value.
 
-* System dependencies
+The client can then enter a destination value and calculate the distance in miles.
 
-* Configuration
+## Showcase
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![Showcase of the application interface](showcase.png)
